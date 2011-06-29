@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sing 4 Your Dreams test page</title>
+	</head>
+  <body>
+<h1>The Youtube Direct Button<h1>
+<script type="text/javascript" src="https://sing4dreams.appspot.com/js/ytd-embed.js"></script>
+<script type="text/javascript">
+var ytdInitFunction = function() {
+  var ytd = new Ytd();
+  ytd.setAssignmentId("1001");
+  ytd.setCallToAction("callToActionId-1001");
+  var containerWidth = 350;
+  var containerHeight = 550;
+  ytd.setYtdContainer("ytdContainer-1001", containerWidth, containerHeight);
+  ytd.ready();
+};
+if (window.addEventListener) {
+  window.addEventListener("load", ytdInitFunction, false);
+} else if (window.attachEvent) {
+  window.attachEvent("onload", ytdInitFunction);
+}
+</script>
+<a id="callToActionId-1001" href="javascript:void(0);"><img src="https://sing4dreams.appspot.com/images/calltoaction.png"></a>
+<div id="ytdContainer-1001"></div>
+<h1> the playlist embed code</h1>
+<object width="480" height="385">
+  <param name="movie" value="http://www.youtube.com/p/858EDD8A3600EE0C?fs=1"></param>
+  <param name="allowFullScreen" value="true"></param>
+  <param name="allowscriptaccess" value="always"></param>
+  <embed src="http://www.youtube.com/p/858EDD8A3600EE0C?fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed>
+</object>
+</html>
